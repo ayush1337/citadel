@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-hover {
+    @apply hover:bg-gray-200 rounded-md;
+}
+
+.menu-icon {
+    @apply w-[2rem];
+}
+.test {
+    /* right: -20px; */
+}
+.max-height {
+}
+
+.none {
+    display: none;
+}
+.flexD {
+    display: flex;
+}
+.blockD {
+    display: inline-block;
+}
+
+.mask {
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+    mask-image: linear-gradient(180deg, #000 60%, transparent);
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.height {
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(
+            0deg,
+            rgba(38, 38, 38, 0.4) 100%,
+            rgba(38, 38, 38, 0.3) 100%
+        ),
+        url('https://wpimg.pixelied.com/blog/wp-content/uploads/2021/08/03132815/relevant-elements-reddit-banner-size.jpg');
+}
+
+.bg-gradient2 {
+    background-image: linear-gradient(
+            0deg,
+            rgba(38, 38, 38, 0.4) 100%,
+            rgba(38, 38, 38, 0.3) 100%
+        ),
+        url('https://cdna.artstation.com/p/assets/images/images/055/450/114/large/julie-passanezi-reddit-banner.jpg?1666967889');
+}
+.translate-half {
+    transform: translate(-50%, -50%);
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(161 161 170);
+    border-radius: 50px;
+}
+
+.drop-down::-webkit-scrollbar {
+    width: 5px;
+}
+
+.drop-down::-webkit-scrollbar-track {
+}
+
+.drop-down::-webkit-scrollbar-thumb {
+    background-color: rgba(161, 161, 170, 0.4);
+    border-radius: 50px;
+}
+.ant-btn-primary {
+    background-color: #1677ff;
+}
+.ant-spin-nested-loading {
+    width: 100%;
+}
+.ant-spin-container {
+    @apply flex flex-col gap-4;
+}
